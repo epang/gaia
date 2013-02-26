@@ -15,8 +15,8 @@
 
 .menu-item::before {
   position: absolute;
-  top: calc((6.2rem - 30px) / 2);
-  left: calc((5.5rem - 30px) / 2);
+  top: calc((6.2rem - 32px) / 2);
+  left: calc((5.5rem - 28px) / 2);
   width: 30px;
   height: 30px;
 
@@ -168,67 +168,18 @@
   background-image: -moz-image-rect(url(icons/wifi.png), 0, 160, 32, 128);
 }
 
-/* secure - no connected */
-.wifi-signal0 > .wifi-secure {
-  background-image: -moz-image-rect(url(icons/wifi.png), 32, 32, 64, 0);
-}
-
-.wifi-signal1 > .wifi-secure {
-  background-image: -moz-image-rect(url(icons/wifi.png), 32, 64, 64, 32);
-}
-
-.wifi-signal2 > .wifi-secure {
-  background-image: -moz-image-rect(url(icons/wifi.png), 32, 96, 64, 64);
-}
-
-.wifi-signal3 > .wifi-secure {
-  background-image: -moz-image-rect(url(icons/wifi.png), 32, 128, 64, 96);
-}
-
-.wifi-signal4 > .wifi-secure {
-  background-image: -moz-image-rect(url(icons/wifi.png), 32, 160, 64, 128);
-}
-
-/* free - connected */
-.wifi-signal0.connected > a {
-  background-image: -moz-image-rect(url(icons/wifi.png), 64, 32, 96, 0);
-}
-
-.wifi-signal1.connected > a {
-  background-image: -moz-image-rect(url(icons/wifi.png), 64, 64, 96, 32);
-}
-
-.wifi-signal2.connected > a {
-  background-image: -moz-image-rect(url(icons/wifi.png), 64, 96, 96, 64);
-}
-
-.wifi-signal3.connected > a {
-  background-image: -moz-image-rect(url(icons/wifi.png), 64, 128, 96, 96);
-}
-
-.wifi-signal4.connected > a {
-  background-image: -moz-image-rect(url(icons/wifi.png), 64, 160, 96, 128);
-}
-
-/* secure - connected */
-.wifi-signal0.connected > .wifi-secure {
-  background-image: -moz-image-rect(url(icons/wifi.png), 96, 32, 128, 0);
-}
-
-.wifi-signal1.connected > .wifi-secure {
-  background-image: -moz-image-rect(url(icons/wifi.png), 96, 64, 128, 32);
-}
-
-.wifi-signal2.connected > .wifi-secure {
-  background-image: -moz-image-rect(url(icons/wifi.png), 96, 96, 128, 64);
-}
-
-.wifi-signal3.connected > .wifi-secure {
-  background-image: -moz-image-rect(url(icons/wifi.png), 96, 128, 128, 96);
-}
-
-.wifi-signal4.connected > .wifi-secure {
-  background-image: -moz-image-rect(url(icons/wifi.png), 96, 160, 128, 128);
+/* secured networks */
+.wifi-secure:after {
+  content: '\00a0';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: right 4.8rem top 50%;
+  background-image: url(images/wifi_lock.png);
 }
 
 /******************************************************************************
